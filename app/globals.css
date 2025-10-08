@@ -127,3 +127,58 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Brand Solutions Tab Styles - Add to globals.css */
+
+[data-slot="tabs"] {
+  display: flex;
+  flex-direction: column;
+}
+
+[data-slot="tabs-list"] {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 6px;
+  height: 60px;
+  border-radius: 50px;
+  border: 1px solid rgba(138, 174, 164, 0.2);
+  background: rgba(242, 244, 247, 0.3);
+  backdrop-filter: blur(21px);
+}
+
+[data-slot="tabs-trigger"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  padding: 12px 24px;
+  border-radius: 50px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  /* Text styling for inactive state */
+  color: #71727a;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+[data-slot="tabs-trigger"]:hover:not([data-state="active"]) {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+[data-slot="tabs-trigger"][data-state="active"] {
+  background: white;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.04);
+
+  /* Text styling for active state */
+  color: #000000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}

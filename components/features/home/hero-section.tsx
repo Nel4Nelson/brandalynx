@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import Image from 'next/image';
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -37,7 +38,7 @@ const HeroSection = () => {
         <>
           WE WELCOME YOU IN
           <br />
-          THE NAME OF <span className="text-brand-red">D-ISTINCTION</span>
+          THE NAME OF <br/> <span className="text-brand-red">D-ISTINCTION</span>
         </>
       ),
       description:
@@ -123,7 +124,8 @@ const HeroSection = () => {
         <div className="absolute bottom-16 right-0 w-full h-[45%] sm:w-3/4 sm:h-1/2 md:w-2/3 md:h-3/5 lg:w-1/2 lg:h-2/3 pointer-events-none z-10">
           <div className="relative w-full h-full">
             {slides.map((slide, index) => (
-              <img
+              <Image
+                fill
                 key={index}
                 src={slide.image}
                 alt={`Hero ${index + 1}`}
