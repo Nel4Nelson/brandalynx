@@ -182,3 +182,24 @@
   font-weight: 600;
   line-height: normal;
 }
+
+/* Diamond Button Styles */
+.diamond-button {
+  transform: rotate(45deg);
+  border-radius: 20%;
+}
+
+
+.diamond-button-text {
+  transform: rotate(-45deg);
+  display: inline-block;
+}
+
+/* Desktop 3D Diamond Button with cursor hiding */
+@media (hover: hover) and (min-width: 1024px) {
+  .diamond-button-3d {
+    cursor: none;
+  }
+}
+
+  

@@ -46,7 +46,7 @@ const Navbar = () => {
                         {/* Logo */}
                         <Link href="/" className="flex items-center">
                             <Image
-                                src="/logos/organizer.svg"
+                                src="/logos/ba-3-logo.svg"
                                 alt="BrandALYANX Logo"
                                 className="h-14 w-auto sm:h-14 lg:h-16"
                                 width={400}
