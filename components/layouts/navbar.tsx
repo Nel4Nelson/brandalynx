@@ -105,7 +105,7 @@ const Navbar = () => {
                                 href="/get-started"
                                 className="bg-brand-red text-white px-7 py-3 rounded-lg hover:opacity-90 transition-opacity font-semibold text-base"
                             >
-                                Start your journey now!
+                               START YOUR JOURNEY NOW!
                             </Link>
                         </div>
 
@@ -150,21 +150,21 @@ const Navbar = () => {
                             <div>
                                 <button
                                     onClick={() => setIsMobileDropdownOpen(!isMobileDropdownOpen)}
-                                    className="w-full flex items-center justify-between text-white text-4xl sm:text-5xl font-bold py-4 hover:text-brand-red transition-colors"
+                                    className="w-full flex items-center justify-between text-white text-xl sm:text-2xl font-bold py-3 hover:text-brand-red transition-colors"
                                 >
                                     <span>Branding Solution</span>
                                     <ChevronDown
-                                        className={`h-8 w-8 transition-transform ${isMobileDropdownOpen ? 'rotate-180' : ''
+                                        className={`h-6 w-6 transition-transform ${isMobileDropdownOpen ? 'rotate-180' : ''
                                             }`}
                                     />
                                 </button>
                                 {isMobileDropdownOpen && (
-                                    <div className="pl-6 space-y-3 mt-2 mb-4">
+                                    <div className="pl-6 space-y-2 mt-2 mb-4">
                                         {brandingServices.map((service) => (
                                             <Link
                                                 key={service.name}
                                                 href={service.href}
-                                                className="block text-gray-300 text-xl py-2 hover:text-brand-amber transition-colors"
+                                                className="block text-gray-300 text-base py-2 hover:text-brand-amber transition-colors"
                                                 onClick={() => setIsMenuOpen(false)}
                                             >
                                                 {service.name}
@@ -176,7 +176,7 @@ const Navbar = () => {
 
                             <Link
                                 href="/portfolio"
-                                className="block text-white text-4xl sm:text-5xl font-bold py-4 hover:text-brand-red transition-colors"
+                                className="block text-white text-xl sm:text-2xl font-bold py-3 hover:text-brand-red transition-colors"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 See our work
@@ -184,7 +184,7 @@ const Navbar = () => {
 
                             <Link
                                 href="/about"
-                                className="block text-white text-4xl sm:text-5xl font-bold py-4 hover:text-brand-red transition-colors"
+                                className="block text-white text-xl sm:text-2xl font-bold py-3 hover:text-brand-red transition-colors"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 About BA
@@ -192,7 +192,7 @@ const Navbar = () => {
 
                             <Link
                                 href="/resources"
-                                className="block text-white text-4xl sm:text-5xl font-bold py-4 hover:text-brand-red transition-colors"
+                                className="block text-white text-xl sm:text-2xl font-bold py-3 hover:text-brand-red transition-colors"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Resources
@@ -200,7 +200,7 @@ const Navbar = () => {
 
                             <Link
                                 href="/contact"
-                                className="block text-white text-4xl sm:text-5xl font-bold py-4 hover:text-brand-red transition-colors"
+                                className="block text-white text-xl sm:text-2xl font-bold py-3 hover:text-brand-red transition-colors"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Contact us
@@ -211,7 +211,7 @@ const Navbar = () => {
                         <div className="mt-12 mb-8">
                             <Link
                                 href="/get-started"
-                                className="block bg-brand-red text-white text-center px-8 py-5 rounded-lg hover:opacity-90 transition-opacity font-bold text-xl"
+                                className="block bg-brand-red text-white text-center px-8 py-4 rounded-lg hover:opacity-90 transition-opacity font-bold text-base"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Start your journey now!

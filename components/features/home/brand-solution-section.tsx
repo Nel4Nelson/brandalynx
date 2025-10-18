@@ -119,7 +119,7 @@ const BrandSolutionsSection = () => {
                     {/* Section Title */}
                     <div className="text-center mb-12">
                         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
-                            <span className="text-black">Brand </span>
+                            <span className="text-black">Branding </span>
                             <span className="text-brand-red">Solutions</span>
                         </h2>
                         <p className="italic text-gray-500 text-xl xl:text-2xl">

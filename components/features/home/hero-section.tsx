@@ -12,38 +12,38 @@ const HeroSection = () => {
     {
       title: (
         <>
-          ADVANCE FROM ORDINARY
+          Advance From Ordinary
           <br />
-          TO <span className="text-brand-red">SUPERBRAND</span>
+          To <span className="text-brand-red">SuperBrand</span>
         </>
       ),
       description:
-        'Shine through the noise, like a red diamond—Your brand needs distinction, emotional connection and loyalty to become unforgettable.',
+        'Being memorable is never enough; your brand must become unforgettable to remain relevant. You choose—extinction or distinction?',
       image: '/images/hero-image-1.svg',
     },
     {
       title: (
         <>
-          WE ARE YOUR <span className="text-brand-red">ALLY</span>
+          We are your <span className="text-brand-red">Ally</span> On
           <br />
-          ON THAT JOURNEY
+          This Journey
         </>
       ),
       description:
-        'Join a league of corporate, personal, product & service brands who are building brands that are seen, heard, understood and unforgettable',
+        'Join 200+ personal, corporate, event, product, service, geographic & government brands who are building their superbrands with our D-istinction Framework™',
       image: '/images/hero-image-2.svg',
     },
     {
       title: (
         <>
-          WE WELCOME YOU IN
+          We Welcome You,
           <br />
-          THE NAME OF <br /> <span className="text-brand-red">D-ISTINCTION</span>
+          In The Name Of <br /> <span className="text-brand-red">Distinction</span>
         </>
       ),
       description:
-        'Being memorable is never enough, your brand must become unforgettable to remain relevant. You choose—extinction or distinction?',
-      image: '/images/hero-image-3.svg',
+        'Shine through the noise, like a red diamond—Your brand needs distinction to be seen, heard, understood and unforgettable.',
+      image: '/images/hero-3-img.svg',
     },
   ];
 
@@ -144,7 +144,7 @@ const HeroSection = () => {
             {/* Desktop/Tablet Layout - Original */}
             <div className="hidden sm:block">
               <div key={currentSlide} className="max-w-7xl animate-fadeInUp">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-black leading-tight mb-6">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-black mb-6">
                   {slides[currentSlide].title}
                 </h1>
 
@@ -181,7 +181,7 @@ const HeroSection = () => {
                 src={slide.image}
                 alt={`Hero ${index + 1}`}
                 priority // Preload images for faster rendering
-                className={`absolute bottom-0 right-0 w-full h-full object-contain transition-opacity duration-700 ${index === currentSlide ? 'opacity-100' : 'opacity-0'
+                className={`absolute border-amber-950 bottom-0 right-0 w-full h-full object-contain transition-opacity duration-700 ${index === currentSlide ? 'opacity-100' : 'opacity-0'
                   }`}
                 style={{ objectPosition: 'bottom right' }}
               />

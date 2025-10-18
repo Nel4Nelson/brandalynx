@@ -186,7 +186,7 @@
 /* Diamond Button Styles */
 .diamond-button {
   transform: rotate(45deg);
-  border-radius: 20%;
+  border-radius: 10%;
 }
 
 

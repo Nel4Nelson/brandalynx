@@ -37,7 +37,7 @@ const PronunciationSection = () => {
 
     return (
         <>
-            <section className="relative w-full bg-white py-12 sm:py-16 lg:py-20 overflow-hidden shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)]">
+            <section className="relative w-full bg-white py-12 sm:py-16 lg:py-20 overflow-hidden shadow-2xl">
                 <div className="w-full max-w-[1600px] mx-auto px-4 sm:px-6">
                     {/* Mobile Layout (< 1024px) - Stacked */}
                     <div className="flex flex-col gap-8 lg:hidden">
@@ -64,7 +64,7 @@ const PronunciationSection = () => {
                         <div className="flex items-center justify-center pt-4">
                             <Link
                                 href="/about"
-                                className="diamond-button w-40 h-40 sm:w-48 sm:h-48 bg-brand-red flex items-center justify-center text-white font-bold text-lg sm:text-xl transition-all duration-300 shadow-2xl hover:shadow-3xl hover:scale-105 active:scale-95"
+                                className="diamond-button w-40 h-40 bg-brand-red flex items-center justify-center text-white font-bold text-lg sm:text-xl transition-all duration-300 shadow-2xl hover:shadow-3xl hover:scale-105 active:scale-95"
                             >
                                 <span className="diamond-button-text">About us</span>
                             </Link>
@@ -72,9 +72,9 @@ const PronunciationSection = () => {
                     </div>
 
                     {/* Desktop Layout (≥ 1024px) - Horizontal */}
-                    <div className="hidden lg:flex gap-8 xl:gap-16 items-center justify-between w-full">
+                    <div className="hidden lg:flex gap-8 items-center justify-between w-full">
                         {/* Left Side - Main Text */}
-                        <div className="flex-1">
+                        <div>
                             <h2 className="text-4xl xl:text-5xl 2xl:text-6xl font-bold text-black leading-tight">
                                 Did you know that{' '}
                                 <span className="block"><span className='text-brand-amber'>Brand</span><span className='text-brand-red'>ALYANX</span> is pronounced</span>{' '}
@@ -83,7 +83,7 @@ const PronunciationSection = () => {
                         </div>
 
                         {/* Middle - Pronunciations */}
-                        <div className="flex-shrink-0 space-y-4">
+                        <div className="space-y-4">
                             <p className="text-gray-700">
                                 <span className="font-semibold text-black text-2xl xl:text-3xl">Brand</span>{' '}
                                 <span className="italic text-gray-500 text-xl xl:text-2xl">/brænd/</span>
@@ -95,7 +95,7 @@ const PronunciationSection = () => {
                         </div>
 
                         {/* Right Side - Interactive Button */}
-                        <div className="flex-shrink-0">
+                        <div>
                             <Link
                                 href="/about"
                                 ref={buttonRef}
@@ -106,7 +106,7 @@ const PronunciationSection = () => {
                                 style={{ perspective: '1000px' }}
                             >
                                 <div
-                                    className="diamond-button w-56 h-56 xl:w-64 xl:h-64 bg-brand-red flex items-center justify-center text-white font-bold text-xl xl:text-2xl transition-all duration-200 ease-out shadow-2xl hover:shadow-3xl rotate-45"
+                                    className="diamond-button w-40 h-40 bg-brand-red flex items-center justify-center text-white font-bold text-xl xl:text-2xl transition-all duration-200 ease-out shadow-2xl hover:shadow-3xl rotate-45"
                                     style={{
                                         transform: `rotateX(${rotation.x}deg) rotateY(${rotation.y}deg) scale(${isHovered ? 1.05 : 1})`,
                                         transformStyle: 'preserve-3d',
