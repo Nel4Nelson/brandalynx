@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Quicksand } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/layouts/navbar';
+import Footer from '@/components/layouts/footer';
 
 const quicksand = Quicksand({
   subsets: ['latin'],
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className={`${quicksand.variable} font-sans antialiased`}>
         <Navbar />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

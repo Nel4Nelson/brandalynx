@@ -41,7 +41,7 @@ const Navbar = () => {
     return (
         <>
             <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center h-24">
                         {/* Logo */}
                         <Link href="/" className="flex items-center">
@@ -64,7 +64,7 @@ const Navbar = () => {
                                 onMouseLeave={() => setIsDropdownOpen(false)}
                             >
                                 <button className="flex items-center space-x-1 text-black text-base font-medium hover:text-gray-600 transition-colors">
-                                    <span>Branding Solution</span>
+                                    <span>Branding Solutions</span>
                                     <ChevronDown className="h-4 w-4" />
                                 </button>
 
@@ -105,7 +105,7 @@ const Navbar = () => {
                                 href="/get-started"
                                 className="bg-brand-red text-white px-7 py-3 rounded-lg hover:opacity-90 transition-opacity font-semibold text-base"
                             >
-                               START YOUR JOURNEY NOW!
+                                START YOUR JOURNEY NOW!
                             </Link>
                         </div>
 
@@ -152,7 +152,7 @@ const Navbar = () => {
                                     onClick={() => setIsMobileDropdownOpen(!isMobileDropdownOpen)}
                                     className="w-full flex items-center justify-between text-white text-xl sm:text-2xl font-bold py-3 hover:text-brand-red transition-colors"
                                 >
-                                    <span>Branding Solution</span>
+                                    <span>Branding Solutions</span>
                                     <ChevronDown
                                         className={`h-6 w-6 transition-transform ${isMobileDropdownOpen ? 'rotate-180' : ''
                                             }`}
