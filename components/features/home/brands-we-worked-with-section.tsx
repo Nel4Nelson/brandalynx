@@ -4,56 +4,10 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 // Client logos - you'll replace these with your actual client logos
-const topRowLogos = [
-  "/client-logo/1.svg",
-  "/client-logo/2.svg",
-  "/client-logo/3.svg",
-  "/client-logo/4.svg",
-  "/client-logo/5.svg",
-  "/client-logo/6.svg",
-  "/client-logo/7.svg",
-  "/client-logo/8.svg",
-  "/client-logo/9.svg",
-  "/client-logo/10.svg",
-  "/client-logo/11.svg",
-  "/client-logo/12.svg",
-  "/client-logo/13.svg",
-  "/client-logo/14.svg",
-  "/client-logo/15.svg",
-  "/client-logo/16.svg",
-  "/client-logo/17.svg",
-  "/client-logo/18.svg",
-  "/client-logo/19.svg",
-  "/client-logo/20.svg",
-  "/client-logo/21.svg",
-  "/client-logo/22.svg",
-  "/client-logo/23.svg",
-  "/client-logo/24.svg",
-];
+// Generate logo paths automatically
+const topRowLogos = Array.from({ length: 35 }, (_, i) => `/client-logo/${i + 1}.svg`);
 
-const bottomRowLogos = [
-  "/client-logo/25.svg",
-  "/client-logo/26.svg",
-  "/client-logo/27.svg",
-  "/client-logo/28.svg",
-  "/client-logo/29.svg",
-  "/client-logo/30.svg",
-  "/client-logo/31.svg",
-  "/client-logo/32.svg",
-  "/client-logo/33.svg",
-  "/client-logo/34.svg",
-  "/client-logo/35.svg",
-  "/client-logo/36.svg",
-  "/client-logo/37.svg",
-  "/client-logo/38.svg",
-  "/client-logo/39.svg",
-  "/client-logo/40.svg",
-  "/client-logo/41.svg",
-  "/client-logo/42.svg",
-  "/client-logo/43.svg",
-  "/client-logo/44.svg",
-  "/client-logo/45.svg",
-];
+const bottomRowLogos = Array.from({ length: 35 }, (_, i) => `/client-logo/${i + 36}.svg`);
 
 export default function BrandsWeWorkedWithSection() {
   const [isTopRowHovered, setIsTopRowHovered] = useState(false);
