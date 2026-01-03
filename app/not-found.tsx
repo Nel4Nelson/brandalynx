@@ -81,14 +81,6 @@ export default function NotFound() {
                             <Home size={18} className="sm:w-5 sm:h-5 group-hover:-translate-y-0.5 transition-transform duration-300" />
                             Back to Home
                         </Link>
-
-                        <Link
-                            href="/about"
-                            className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white hover:bg-gray-50 text-black font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-base sm:text-lg border-2 border-gray-300 hover:border-brand-red flex items-center justify-center gap-2"
-                        >
-                            <ArrowLeft size={18} className="sm:w-5 sm:h-5 group-hover:-translate-x-1 transition-transform duration-300" />
-                            Learn About Us
-                        </Link>
                     </motion.div>
 
                     {/* Decorative Diamond Element at Bottom */}
